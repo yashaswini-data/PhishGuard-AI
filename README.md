@@ -275,7 +275,7 @@ PhishGuard-AI/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/PhishGuard-AI.git
+git clone https://github.com/yashaswini-data/PhishGuard-AI.git
 cd PhishGuard-AI
 ```
 
