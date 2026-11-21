@@ -1,0 +1,39 @@
+PhishGuard AI - Model Evaluation Report
+=============================================
+
+Algorithm: Random Forest Classifier
+Dataset Size: 10227 records
+Features: 30 lexical & structural URL features
+
+Accuracy:  96.63%
+Precision: 98.31%
+Recall:    95.35%
+F1-Score:  96.81%
+ROC-AUC:   0.9936
+
+Confusion Matrix:
+  TN: 931  FP: 18
+  FN: 51  TP: 1046
+
+Detailed Report:
+              precision    recall  f1-score   support
+
+  Legitimate       0.95      0.98      0.96       949
+    Phishing       0.98      0.95      0.97      1097
+
+    accuracy                           0.97      2046
+   macro avg       0.97      0.97      0.97      2046
+weighted avg       0.97      0.97      0.97      2046
+
+
+Top 10 Features:
+   1. url_length                : 0.20654
+   2. path_length               : 0.13181
+   3. char_entropy              : 0.11048
+   4. hostname_length           : 0.09617
+   5. is_https                  : 0.09315
+   6. digit_ratio               : 0.06104
+   7. count_subdomains          : 0.05292
+   8. ratio_digits_to_letters   : 0.05024
+   9. has_suspicious_extension  : 0.04197
+  10. count_dots                : 0.04191
